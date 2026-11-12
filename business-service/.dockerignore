@@ -1,0 +1,12 @@
+# Maven build output
+target/
+**/target/
+
+# IDE / editor
+.idea/
+*.iml
+.vscode/
+
+# Git cache
+.git/
+.gitignore

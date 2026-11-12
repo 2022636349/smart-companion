@@ -1,0 +1,12 @@
+# Real secrets & local venv — never bake into image
+.env
+.env.example
+.venv
+**/__pycache__/
+*.pyc
+tests/
+
+# Documentation
+docs/
+README.md
+AGENTS.md

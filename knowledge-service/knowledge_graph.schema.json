@@ -1,0 +1,149 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://education-agent.local/schemas/knowledge-graph-v2.json",
+  "title": "Python课程知识图谱 V2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["metadata", "nodes", "edges"],
+  "properties": {
+    "metadata": {"$ref": "#/definitions/metadata"},
+    "nodes": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/node"}
+    },
+    "edges": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/edge"}
+    },
+    "books": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/book"}
+    },
+    "source_sections": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/source_section"}
+    }
+  },
+  "definitions": {
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["name", "version", "node_count", "edge_count", "requires_semantics"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "version": {"type": "string", "minLength": 1},
+        "description": {"type": "string"},
+        "node_count": {"type": "integer", "minimum": 0},
+        "edge_count": {"type": "integer", "minimum": 0},
+        "created_at": {"type": "string"},
+        "updated_at": {"type": "string"},
+        "requires_semantics": {
+          "type": "string",
+          "const": "source_is_prerequisite_of_target"
+        }
+      }
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "name", "level", "node_type", "parent_id", "description",
+        "aliases", "keywords", "difficulty", "importance", "estimated_minutes",
+        "learning_objectives", "common_misconceptions", "example_code",
+        "review_status", "content_version", "rights_status", "reviewed_by", "reviewed_at"
+      ],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "name": {"type": "string", "minLength": 1},
+        "level": {"type": "integer", "enum": [0, 1, 2, 3]},
+        "node_type": {
+          "type": "string",
+          "enum": ["course", "module", "chapter", "section", "knowledge_point"]
+        },
+        "parent_id": {"type": ["string", "null"]},
+        "description": {"type": ["string", "null"]},
+        "aliases": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "keywords": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "difficulty": {
+          "anyOf": [
+            {"type": "null"},
+            {"type": "string", "enum": ["BEGINNER", "BASIC", "INTERMEDIATE", "ADVANCED"]}
+          ]
+        },
+        "importance": {"type": ["integer", "null"], "minimum": 1, "maximum": 5},
+        "estimated_minutes": {"type": ["integer", "null"], "minimum": 1},
+        "learning_objectives": {"type": "array", "items": {"type": "string"}},
+        "common_misconceptions": {"type": "array", "items": {"type": "string"}},
+        "example_code": {"type": "array", "items": {"type": "string"}},
+        "review_status": {"type": "string", "enum": ["PENDING", "APPROVED", "REJECTED"]},
+        "content_version": {"type": "integer", "minimum": 1},
+        "rights_status": {"type": "string", "enum": ["PENDING", "ALLOWED", "RESTRICTED"]},
+        "reviewed_by": {"type": ["string", "null"]},
+        "reviewed_at": {"type": ["string", "null"]}
+      }
+    },
+    "edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "target", "relation", "review_status", "evidence", "confidence"],
+      "properties": {
+        "source": {"type": "string", "minLength": 1},
+        "target": {"type": "string", "minLength": 1},
+        "relation": {"type": "string", "enum": ["REQUIRES", "RELATED", "SUPPORTED_BY"]},
+        "review_status": {"type": "string", "enum": ["PENDING", "APPROVED", "REJECTED"]},
+        "evidence": {"type": "array", "items": {"type": "string"}},
+        "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1}
+      }
+    },
+    "book": {
+      "type": "object",
+      "required": ["book_id", "book_name", "catalog_status", "rights_status"],
+      "properties": {
+        "book_id": {"type": "string"},
+        "book_name": {"type": "string"},
+        "publisher": {"type": "string"},
+        "author": {"type": "string"},
+        "publish_year": {"type": "string"},
+        "catalog_status": {"type": "string"},
+        "rights_status": {"type": "string", "enum": ["PENDING", "ALLOWED", "RESTRICTED"]}
+      }
+    },
+    "source_section": {
+      "description": "发布物使用与 internal OpenAPI 2.1 GraphSource 对齐的 canonical 结构；第二分支仅用于兼容历史审核 CSV。",
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "node_id", "source_type", "title", "locator", "review_status", "rights_status"],
+          "properties": {
+            "id": {"type": "string", "minLength": 1},
+            "node_id": {"type": "string", "minLength": 1},
+            "source_type": {"type": "string", "enum": ["TEXTBOOK", "TEACHING_RESOURCE"]},
+            "title": {"type": "string", "minLength": 1},
+            "resource_id": {"type": ["integer", "null"]},
+            "file_id": {"type": ["integer", "null"]},
+            "chapter": {"type": ["string", "null"]},
+            "page_from": {"type": ["integer", "null"], "minimum": 1},
+            "page_to": {"type": ["integer", "null"], "minimum": 1},
+            "locator": {"type": "string", "minLength": 1},
+            "excerpt": {"type": ["string", "null"]},
+            "review_status": {"type": "string", "enum": ["PENDING", "APPROVED", "REJECTED"]},
+            "rights_status": {"type": "string", "enum": ["ALLOWED", "RESTRICTED"]},
+            "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1}
+          }
+        },
+        {
+          "type": "object",
+          "required": ["book_id", "section_title", "knowledge_id", "audit_result"],
+          "properties": {
+            "book_id": {"type": "string"},
+            "book_name": {"type": "string"},
+            "section_title": {"type": "string"},
+            "knowledge_id": {"type": "string"},
+            "audit_result": {"type": "string"}
+          }
+        }
+      ]
+    }
+  }
+}

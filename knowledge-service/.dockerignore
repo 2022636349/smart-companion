@@ -1,0 +1,20 @@
+# Runtime virtual environments — live on host at D:\CodexEnvs
+ai-service/venv/
+knowledge-service/venv/
+**/__pycache__/
+*.pyc
+*.pyo
+.env
+.env.example
+.venv
+
+# Test data (large CSVs) — only knowledge_graph_v2.json needed at runtime
+**/*.csv
+*.xlsx
+data/
+
+# Documentation & tools
+docs/
+tools/
+.git/
+.gitignore

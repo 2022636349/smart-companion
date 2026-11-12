@@ -1,0 +1,114 @@
+{
+  "courseId": 3,
+  "reviewStatus": "APPROVED",
+  "mappings": [
+    {
+      "indicatorId": "T01I1",
+      "knowledgePointId": "SC-T01I1",
+      "materialIds": [
+        "Q001",
+        "Q002",
+        "Q006",
+        "Q007",
+        "Q013",
+        "Q014"
+      ]
+    },
+    {
+      "indicatorId": "T01I2",
+      "knowledgePointId": "SC-T01I2",
+      "materialIds": [
+        "Q003",
+        "Q004",
+        "Q005",
+        "Q008",
+        "Q009",
+        "Q010",
+        "Q012",
+        "Q015",
+        "Q016",
+        "Q017"
+      ]
+    },
+    {
+      "indicatorId": "T01I3",
+      "knowledgePointId": "SC-T01I3",
+      "materialIds": [
+        "Q011",
+        "Q018"
+      ]
+    },
+    {
+      "indicatorId": "T02I1",
+      "knowledgePointId": "SC-T02I1",
+      "materialIds": [
+        "Q019",
+        "Q020",
+        "Q021",
+        "Q022",
+        "Q023",
+        "Q024",
+        "Q025",
+        "Q026"
+      ]
+    },
+    {
+      "indicatorId": "T02I2",
+      "knowledgePointId": "SC-T02I2",
+      "materialIds": [
+        "Q028",
+        "Q029",
+        "Q030",
+        "Q031",
+        "Q032",
+        "Q035"
+      ]
+    },
+    {
+      "indicatorId": "T02I3",
+      "knowledgePointId": "SC-T02I3",
+      "materialIds": [
+        "Q027",
+        "Q033",
+        "Q034",
+        "Q036"
+      ]
+    },
+    {
+      "indicatorId": "T03I1",
+      "knowledgePointId": "SC-T03I1",
+      "materialIds": [
+        "Q037",
+        "Q038",
+        "Q039",
+        "Q040",
+        "Q041",
+        "Q042",
+        "Q043"
+      ]
+    },
+    {
+      "indicatorId": "T03I2",
+      "knowledgePointId": "SC-T03I2",
+      "materialIds": [
+        "Q044",
+        "Q045",
+        "Q046",
+        "Q047",
+        "Q048",
+        "Q049",
+        "Q053"
+      ]
+    },
+    {
+      "indicatorId": "T03I3",
+      "knowledgePointId": "SC-T03I3",
+      "materialIds": [
+        "Q050",
+        "Q051",
+        "Q052",
+        "Q054"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+export function moveStepUp<T>(steps:T[],page:number,index:number,size=3){const at=(page-1)*size+index;if(at<=0||at>=steps.length)return page;steps.splice(at-1,0,steps.splice(at,1)[0]);return Math.floor((at-1)/size)+1;}
+export function removeStepAt<T>(steps:T[],page:number,index:number,size=3){const at=(page-1)*size+index;if(at>=0&&at<steps.length)steps.splice(at,1);return Math.min(page,Math.max(1,Math.ceil(steps.length/size)));}

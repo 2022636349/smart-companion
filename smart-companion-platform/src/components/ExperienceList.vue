@@ -1,0 +1,20 @@
+<script setup lang="ts">
+import { notifyError } from '../notification';
+import {materialActionLabel} from '../materialPresentation';
+import { ref, watch, onBeforeUnmount } from 'vue';
+import {indicatorLabel,lastPage,requestGate,percentText,observationCell,materialLabel} from '../experienceDisplay';
+import { experience, type Page, type Row } from '../experienceApi';
+const props=withDefaults(defineProps<{collection:string;filters?:Row;size?:number;refresh?:number;matrix?:{id:string;label:string}[]}>(),{size:20});
+const emit=defineEmits<{select:[row:Row]}>();
+const page=ref(1),q=ref(''),search=ref(''),loading=ref(false),error=ref('');
+const data=ref<Page>({revision:0,page:1,pageSize:20,total:0,items:[]});const gate=requestGate();onBeforeUnmount(()=>gate.next());
+async function load(){const turn=gate.next();loading.value=true;error.value='';try{const result=await experience.page(props.collection,{...props.filters,page:page.value,pageSize:props.size,q:search.value});if(!gate.current(turn))return;if(page.value>1&&!result.items.length){page.value=lastPage(result.total,props.size);return;}data.value=result;}catch(e){if(gate.current(turn)){error.value=(e as Error).message;notifyError(e);}}finally{if(gate.current(turn))loading.value=false;}}
+watch(()=>[props.collection,JSON.stringify(props.filters),props.refresh,search.value],()=>{page.value=1;void load();},{immediate:true});watch(page,load);
+function find(){const next=q.value.trim();if(next===search.value)void load();else search.value=next;}
+const status:Record<string,string>={READY:'当前证据表现较好',DEVELOPING:'仍需巩固',NOT_ASSESSED:'本次未测量',NEEDS_PRACTICE:'需要练习',INSUFFICIENT:'证据不足',NO_EVIDENCE:'暂无证据',MASTERED:'达到要求',MEETS:'达到要求'};
+function cellTitle(row:Row,id:string,label:string){const o=observationCell(row,id);return `${row.id} · ${label} · ${status[o?.status]||o?.status||'暂无证据'} · ${percentText(o?.scorePercent)}`;}
+function brief(row:Row){return String(row.fileName||row.body||row.reason||row.message||row.disposition||row.classId||'暂无摘要').slice(0,100);}
+</script>
+<template><section class="card flow-list"><form class="button-row" @submit.prevent="find"><label>搜索<input v-model="q" placeholder="输入编号或关键词" /></label><button>搜索</button></form><p v-if="loading" role="status">正在读取…</p><p v-else-if="error">读取失败，可重试。 <button @click="load">重试</button></p><template v-else><p v-if="!data.items.length" class="muted">当前范围暂无数据。</p><p v-if="matrix!==undefined&&!matrix.length" class="empty-state">请选择知识点以查看学生能力矩阵。</p><div v-else-if="matrix!==undefined&&data.items.length" class="flow-matrix-scroll" :class="{'adaptive-matrix':matrix!==undefined}"><table class="flow-matrix"><caption>学生能力得分率 · — 表示暂无评分；悬停或聚焦查看能力全称与状态</caption><thead><tr><th scope="col">学生</th><th v-for="i in matrix" :key="i.id" scope="col" :title="indicatorLabel(i.id,matrix)">{{indicatorLabel(i.id,matrix)}}</th></tr></thead><tbody><tr v-for="row in data.items" :key="row.id"><th scope="row"><button @click="emit('select',row)">{{row.id}}</button></th><td v-for="i in matrix" :key="i.id"><button :class="['matrix-cell',observationCell(row,i.id)?.status]" :title="cellTitle(row,i.id,i.label)" :aria-label="cellTitle(row,i.id,i.label)" @click="emit('select',row)">{{observationCell(row,i.id)?.scorePercent==null?'—':percentText(observationCell(row,i.id).scorePercent)}}</button></td></tr></tbody></table></div><template v-else-if="matrix===undefined"><div v-for="(row,index) in data.items" :key="row.id||index" class="flow-row"><slot :row="row" :select="()=>emit('select',row)"><button @click="emit('select',row)">{{row.id||row.recordId||row.studentId||'查看'}}</button><span>{{brief(row)}}</span><details v-if="row.reason||row.materialIds?.length"><summary>查看建议依据</summary><p>{{row.reason}}</p><p>关联题目与材料：{{row.materialIds?.map((id:string)=>materialActionLabel(id)).join('、')||'暂无'}}</p></details></slot></div></template></template><footer class="button-row"><button :disabled="loading||page<=1" @click="page--">上一页</button><span>第 {{page}} / {{Math.max(1,Math.ceil(data.total/size))}} 页 · 共 {{data.total}} 条</span><button :disabled="loading||page*size>=data.total" @click="page++">下一页</button></footer></section></template>
+
+

@@ -1,0 +1,34 @@
+:root {
+  /* Core identity */
+  --brand-primary: #3159c9;
+  --brand-primary-strong: #1d327a;
+  --brand-primary-soft: #eef3ff;
+  --brand-secondary: #0c8f88;
+  --brand-secondary-strong: #08635f;
+  --brand-secondary-soft: #ddf6f2;
+  --brand-progress: #f2b84b;
+
+  /* Brand neutrals */
+  --brand-ink: #172033;
+  --brand-ink-muted: #56627a;
+  --brand-canvas: #ffffff;
+  --brand-canvas-subtle: #f7f9fc;
+  --brand-line: #d8deea;
+
+  /* Dark-surface adaptations */
+  --brand-primary-on-dark: #b9c9ff;
+  --brand-secondary-on-dark: #67ddd2;
+  --brand-ink-on-dark: #f7f9ff;
+  --brand-ink-muted-on-dark: #bdc8db;
+
+  /* System typography: no network font dependency */
+  --brand-font-sans: Inter, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+
+[data-theme="dark"] {
+  --brand-ink: #f7f9ff;
+  --brand-ink-muted: #bdc8db;
+  --brand-canvas: #07111f;
+  --brand-canvas-subtle: #0f1c2f;
+  --brand-line: #334862;
+}

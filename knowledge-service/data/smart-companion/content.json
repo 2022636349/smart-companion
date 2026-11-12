@@ -1,0 +1,1263 @@
+{
+  "content_version": "0.1.0",
+  "sources": [
+    {
+      "id": "SRC-MOE-2022",
+      "title": "义务教育数学课程标准（2022年版，以2022年5月9日修正版为准）",
+      "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220510531636118932.pdf",
+      "locator": "四、课程内容→初中部分→（一）数与代数→第四学段（7—9年级）；印刷页54、56",
+      "kind": "PUBLIC_STANDARD",
+      "accessed_on": "2026-11-04",
+      "notes": "教育部通知附件指定修正版；只作要求转述定位，不复制教材。不据标准声称指定七年级学期。"
+    },
+    {
+      "id": "SRC-TEAM-01",
+      "title": "智慧学伴团队原创离线数学示范内容",
+      "url": "",
+      "locator": "SC-DATA-CONTENT-01；content 0.1.0",
+      "kind": "TEAM_ORIGINAL",
+      "accessed_on": "2026-11-04",
+      "notes": "12点、40题、12篇阅读均为本次原创草稿；先修、难度与范围为团队教学建议，未由教师审核，不代表官方试题。"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "REQ-R1",
+      "text": "用带符号的数描述相反意义的量，并借助数轴比较数的大小。",
+      "source_id": "SRC-MOE-2022",
+      "locator": "印刷页54；1.数与式（1）①",
+      "scope_note": "标准对应第四学段7—9年级；本次仅自选两个入门主题，非完整课标覆盖；分点、先修和资源难度均为团队建议。"
+    },
+    {
+      "id": "REQ-R2",
+      "text": "联系到原点的距离理解绝对值，识别互为相反数的数。",
+      "source_id": "SRC-MOE-2022",
+      "locator": "印刷页54；1.数与式（1）②",
+      "scope_note": "标准对应第四学段7—9年级；本次仅自选两个入门主题，非完整课标覆盖；分点、先修和资源难度均为团队建议。"
+    },
+    {
+      "id": "REQ-R3",
+      "text": "理解乘方并掌握有理数基本运算，选择合适的运算顺序和简便方法。",
+      "source_id": "SRC-MOE-2022",
+      "locator": "印刷页54；1.数与式（1）③④",
+      "scope_note": "标准对应第四学段7—9年级；本次仅自选两个入门主题，非完整课标覆盖；分点、先修和资源难度均为团队建议。"
+    },
+    {
+      "id": "REQ-R4",
+      "text": "利用有理数运算处理简单生活数量问题。",
+      "source_id": "SRC-MOE-2022",
+      "locator": "印刷页54；1.数与式（1）⑤",
+      "scope_note": "标准对应第四学段7—9年级；本次仅自选两个入门主题，非完整课标覆盖；分点、先修和资源难度均为团队建议。"
+    },
+    {
+      "id": "REQ-E1",
+      "text": "从情境中的等量关系建立方程，理解解的含义。",
+      "source_id": "SRC-MOE-2022",
+      "locator": "印刷页56；2.方程与不等式（1）①",
+      "scope_note": "标准对应第四学段7—9年级；本次仅自选两个入门主题，非完整课标覆盖；分点、先修和资源难度均为团队建议。"
+    },
+    {
+      "id": "REQ-E2",
+      "text": "依据等式性质进行等价变形，求出一元一次方程的解。",
+      "source_id": "SRC-MOE-2022",
+      "locator": "印刷页56；2.方程与不等式（1）②",
+      "scope_note": "标准对应第四学段7—9年级；本次仅自选两个入门主题，非完整课标覆盖；分点、先修和资源难度均为团队建议。"
+    },
+    {
+      "id": "REQ-E3",
+      "text": "把求得的解放回情境，判断数量与条件是否合理。",
+      "source_id": "SRC-MOE-2022",
+      "locator": "印刷页56；2.方程与不等式（1）⑧",
+      "scope_note": "标准对应第四学段7—9年级；本次仅自选两个入门主题，非完整课标覆盖；分点、先修和资源难度均为团队建议。"
+    }
+  ],
+  "knowledge_points": [
+    {
+      "id": "R01",
+      "name": "正负数与数轴",
+      "topic_id": "RATIONAL",
+      "objective": "用正负数表达方向与位置，读出数轴上的数。",
+      "requirement_ids": [
+        "REQ-R1"
+      ],
+      "prerequisite_ids": []
+    },
+    {
+      "id": "R02",
+      "name": "相反数与绝对值",
+      "topic_id": "RATIONAL",
+      "objective": "求相反数、绝对值并解释距离。",
+      "requirement_ids": [
+        "REQ-R2"
+      ],
+      "prerequisite_ids": [
+        "R01"
+      ]
+    },
+    {
+      "id": "R03",
+      "name": "有理数加减",
+      "topic_id": "RATIONAL",
+      "objective": "按符号和绝对值求和差。",
+      "requirement_ids": [
+        "REQ-R3"
+      ],
+      "prerequisite_ids": [
+        "R02"
+      ]
+    },
+    {
+      "id": "R04",
+      "name": "有理数乘除",
+      "topic_id": "RATIONAL",
+      "objective": "正确确定积商符号并计算分数。",
+      "requirement_ids": [
+        "REQ-R3"
+      ],
+      "prerequisite_ids": [
+        "R03"
+      ]
+    },
+    {
+      "id": "R05",
+      "name": "乘方与混合运算",
+      "topic_id": "RATIONAL",
+      "objective": "区分底数和符号，按顺序计算。",
+      "requirement_ids": [
+        "REQ-R3"
+      ],
+      "prerequisite_ids": [
+        "R04"
+      ]
+    },
+    {
+      "id": "R06",
+      "name": "有理数情境应用",
+      "topic_id": "RATIONAL",
+      "objective": "统一正方向后建立算式并解释结果。",
+      "requirement_ids": [
+        "REQ-R4"
+      ],
+      "prerequisite_ids": [
+        "R03",
+        "R04"
+      ]
+    },
+    {
+      "id": "E01",
+      "name": "方程的解与代入",
+      "topic_id": "EQUATION",
+      "objective": "通过代入理解使等式成立的未知数值。",
+      "requirement_ids": [
+        "REQ-E1"
+      ],
+      "prerequisite_ids": [
+        "R03"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "等式性质与基础求解",
+      "topic_id": "EQUATION",
+      "objective": "对等式两边作同样合法操作。",
+      "requirement_ids": [
+        "REQ-E2"
+      ],
+      "prerequisite_ids": [
+        "E01",
+        "R04"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "移项与合并",
+      "topic_id": "EQUATION",
+      "objective": "用等式性质移项并合并同类项。",
+      "requirement_ids": [
+        "REQ-E2"
+      ],
+      "prerequisite_ids": [
+        "E02"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "去括号求解",
+      "topic_id": "EQUATION",
+      "objective": "正确分配系数和负号后求解。",
+      "requirement_ids": [
+        "REQ-E2"
+      ],
+      "prerequisite_ids": [
+        "E03"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "去分母求解",
+      "topic_id": "EQUATION",
+      "objective": "整体乘公倍数并处理每一项。",
+      "requirement_ids": [
+        "REQ-E2"
+      ],
+      "prerequisite_ids": [
+        "E04"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "列方程与情境检验",
+      "topic_id": "EQUATION",
+      "objective": "从等量关系求未知量并检查单位、范围和原条件。",
+      "requirement_ids": [
+        "REQ-E1",
+        "REQ-E3"
+      ],
+      "prerequisite_ids": [
+        "E03"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "RD-R01",
+      "title": "正负数与数轴：概念与自检",
+      "type": "READING",
+      "knowledge_point_ids": [
+        "R01"
+      ],
+      "body": "先规定零点、单位长度和正方向，数轴上的位置才有确定含义。向右表示增大，向左表示减小。例如把向东规定为正，向西4米记为−4米。负号表示方向或相反意义，不是说物体不存在。两个负数相比，右边的数较大，因此−2大于−5。读题先写出正方向，再判断符号。",
+      "answer": null,
+      "explanation": "原创概念阅读，无评分答案；建议先读例子，再用对应练习自检。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "团队教学建议，未经过教师审核；数学例子已人工逐式核对，不代表教师批准。"
+    },
+    {
+      "id": "RD-R02",
+      "title": "相反数与绝对值：概念与自检",
+      "type": "READING",
+      "knowledge_point_ids": [
+        "R02"
+      ],
+      "body": "相反数位于原点两侧，离原点一样远；0的相反数仍是0。绝对值表示到原点的距离，结果不小于0。例如−7的相反数是7，绝对值也是7，但这两个概念的理由不同。正数3的相反数是−3，绝对值却是3。不要把去掉负号当成相反数的通用规则。",
+      "answer": null,
+      "explanation": "原创概念阅读，无评分答案；建议先读例子，再用对应练习自检。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "团队教学建议，未经过教师审核；数学例子已人工逐式核对，不代表教师批准。"
+    },
+    {
+      "id": "RD-R03",
+      "title": "有理数加减：概念与自检",
+      "type": "READING",
+      "knowledge_point_ids": [
+        "R03"
+      ],
+      "body": "同号相加，保留共同符号并把绝对值相加；异号相加，比较绝对值，用较大者的符号配上绝对值之差。减去一个数可改为加上它的相反数。例如−5−(−2)=−5+2=−3。每次先处理运算符与数的符号，再算大小；不能把两个负号在任何位置都直接消去。",
+      "answer": null,
+      "explanation": "原创概念阅读，无评分答案；建议先读例子，再用对应练习自检。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "团队教学建议，未经过教师审核；数学例子已人工逐式核对，不代表教师批准。"
+    },
+    {
+      "id": "RD-R04",
+      "title": "有理数乘除：概念与自检",
+      "type": "READING",
+      "knowledge_point_ids": [
+        "R04"
+      ],
+      "body": "两个非零数相乘或相除，同号结果为正，异号结果为负。计算时可先判断符号，再计算绝对值。分数除法要乘除数的倒数，例如(−3/4)÷(1/2)=−3/2。除数不能是0；0除以非零数得到0。倒数改变的是数值形式，不会自动改变正负号。",
+      "answer": null,
+      "explanation": "原创概念阅读，无评分答案；建议先读例子，再用对应练习自检。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "团队教学建议，未经过教师审核；数学例子已人工逐式核对，不代表教师批准。"
+    },
+    {
+      "id": "RD-R05",
+      "title": "乘方与混合运算：概念与自检",
+      "type": "READING",
+      "knowledge_point_ids": [
+        "R05"
+      ],
+      "body": "乘方表示相同因数连乘。括号决定底数：(−3)^2=9，而−3^2表示先平方再取相反数，得到−9。混合运算先处理括号，再乘方、乘除，最后加减；同级从左到右。算完可通过符号估计检查，例如负数的偶次幂应为正数。不要把平方误算成乘2。",
+      "answer": null,
+      "explanation": "原创概念阅读，无评分答案；建议先读例子，再用对应练习自检。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "团队教学建议，未经过教师审核；数学例子已人工逐式核对，不代表教师批准。"
+    },
+    {
+      "id": "RD-R06",
+      "title": "有理数情境应用：概念与自检",
+      "type": "READING",
+      "knowledge_point_ids": [
+        "R06"
+      ],
+      "body": "实际问题先约定正方向与零基准，再把变化写成带符号的数。例如余额原为6元，支出9元，新的余额是6+(−9)=−3元，负号表示欠款。温度、海拔和积分也可这样表示，但不同单位不能直接相加。结果算出后需回到问题，说明是位置、变化量还是净值。",
+      "answer": null,
+      "explanation": "原创概念阅读，无评分答案；建议先读例子，再用对应练习自检。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "团队教学建议，未经过教师审核；数学例子已人工逐式核对，不代表教师批准。"
+    },
+    {
+      "id": "RD-E01",
+      "title": "方程的解与代入：概念与自检",
+      "type": "READING",
+      "knowledge_point_ids": [
+        "E01"
+      ],
+      "body": "方程含有未知数，并提出一个等式条件；解是能使这个条件成立的未知数值。检查候选解时，把同一个数代入每一处未知数，分别计算左右两边。例如x=4使2x+1=9两边均为9，所以是它的解。只检验一边或看到式中出现4，都不足以证明它是解。",
+      "answer": null,
+      "explanation": "原创概念阅读，无评分答案；建议先读例子，再用对应练习自检。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "团队教学建议，未经过教师审核；数学例子已人工逐式核对，不代表教师批准。"
+    },
+    {
+      "id": "RD-E02",
+      "title": "等式性质与基础求解：概念与自检",
+      "type": "READING",
+      "knowledge_point_ids": [
+        "E02"
+      ],
+      "body": "等式两边同时加减同一个数，等式仍成立；两边同时乘同一个数也成立，除法则要求除以同一个非零数。解x−5=2可两边加5得x=7。解3x=12可两边除以3。每一步都对两边操作，最后代回原式检查。不能为了消去系数而只除一边。",
+      "answer": null,
+      "explanation": "原创概念阅读，无评分答案；建议先读例子，再用对应练习自检。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "团队教学建议，未经过教师审核；数学例子已人工逐式核对，不代表教师批准。"
+    },
+    {
+      "id": "RD-E03",
+      "title": "移项与合并：概念与自检",
+      "type": "READING",
+      "knowledge_point_ids": [
+        "E03"
+      ],
+      "body": "移项是等式两边加减同一个式子的简写，因此跨越等号的项要改变符号。例如5x−2=2x+7，先两边减2x并加2，得3x=9，再得x=3。相同未知数项才可合并；常数和未知数项不能直接相加成一个系数。写出关键中间步骤有助于检查符号。",
+      "answer": null,
+      "explanation": "原创概念阅读，无评分答案；建议先读例子，再用对应练习自检。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "团队教学建议，未经过教师审核；数学例子已人工逐式核对，不代表教师批准。"
+    },
+    {
+      "id": "RD-E04",
+      "title": "去括号求解：概念与自检",
+      "type": "READING",
+      "knowledge_point_ids": [
+        "E04"
+      ],
+      "body": "去括号要把括号外系数乘到括号内每一项。负号可视作系数−1，例如−(x−4)=−x+4。解2(x+3)=14，先得2x+6=14，再求x=4。去括号后再移项合并，不把括号内的和直接拆成不等价的项。求得解后代回带括号的原式检验。",
+      "answer": null,
+      "explanation": "原创概念阅读，无评分答案；建议先读例子，再用对应练习自检。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "团队教学建议，未经过教师审核；数学例子已人工逐式核对，不代表教师批准。"
+    },
+    {
+      "id": "RD-E05",
+      "title": "去分母求解：概念与自检",
+      "type": "READING",
+      "knowledge_point_ids": [
+        "E05"
+      ],
+      "body": "含分母但未知数只在分子的方程，可在两边整体乘各分母的最小公倍数。每一项都必须乘到。例如x/2+1=4，两边乘2得x+2=8，从而x=6。常数1也必须乘2。这里的分母都是非零常数，不讨论未知数作分母的分式方程；完成后用原式检查分数运算。",
+      "answer": null,
+      "explanation": "原创概念阅读，无评分答案；建议先读例子，再用对应练习自检。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "团队教学建议，未经过教师审核；数学例子已人工逐式核对，不代表教师批准。"
+    },
+    {
+      "id": "RD-E06",
+      "title": "列方程与情境检验：概念与自检",
+      "type": "READING",
+      "knowledge_point_ids": [
+        "E06"
+      ],
+      "body": "列方程时先设未知数并注明单位，再找同一数量的两种表达。例如每本书5元，另付运费3元，共28元，可设本数为x，列5x+3=28，解得5本。再检验5为正整数且费用符合原条件。代数上成立还需符合情境；人数、物品数不能直接接受负数或不合理分数。",
+      "answer": null,
+      "explanation": "原创概念阅读，无评分答案；建议先读例子，再用对应练习自检。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "团队教学建议，未经过教师审核；数学例子已人工逐式核对，不代表教师批准。"
+    },
+    {
+      "id": "EX-R01-01",
+      "title": "R01原创练习1",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R01"
+      ],
+      "body": "以向东为正，从原点向西走6米，终点坐标是多少？ 只填写数值；分数可写成a/b。",
+      "answer": "-6",
+      "explanation": "西与正方向相反，故坐标为−6。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "-6",
+        "expected": "-6"
+      }
+    },
+    {
+      "id": "EX-R01-02",
+      "title": "R01原创练习2",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R01"
+      ],
+      "body": "数轴上标有−8、−3、1三个点，最左边点的坐标是多少？ 只填写数值；分数可写成a/b。",
+      "answer": "-8",
+      "explanation": "数轴左侧数更小，三个数中−8最小。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "-8",
+        "expected": "-8"
+      }
+    },
+    {
+      "id": "EX-R01-03",
+      "title": "R01原创练习3",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R01"
+      ],
+      "body": "低于海平面12米，用海平面为0且向上为正，海拔是多少米？ 只填写数值；分数可写成a/b。",
+      "answer": "-12",
+      "explanation": "低于基准记负数，海拔为−12米。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "-12",
+        "expected": "-12"
+      }
+    },
+    {
+      "id": "EX-R01-04",
+      "title": "R01原创练习4",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R01"
+      ],
+      "body": "在−2.5、−1/2、0三个数中，最大的负数是多少？ 只填写数值；分数可写成a/b。",
+      "answer": "-1/2",
+      "explanation": "负数仅有前两项，−1/2更靠右。",
+      "difficulty": 2,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "-1/2",
+        "expected": "-1/2"
+      }
+    },
+    {
+      "id": "EX-R02-01",
+      "title": "R02原创练习1",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R02"
+      ],
+      "body": "求−13的相反数。 只填写数值；分数可写成a/b。",
+      "answer": "13",
+      "explanation": "相反数之和为0，所以是13。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "13",
+        "expected": "13"
+      }
+    },
+    {
+      "id": "EX-R02-02",
+      "title": "R02原创练习2",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R02"
+      ],
+      "body": "求−9的绝对值。 只填写数值；分数可写成a/b。",
+      "answer": "9",
+      "explanation": "−9到原点距离为9。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "abs(-9)",
+        "expected": "9"
+      }
+    },
+    {
+      "id": "EX-R02-03",
+      "title": "R02原创练习3",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R02"
+      ],
+      "body": "数轴上点−4到原点的距离是多少个单位？ 只填写数值；分数可写成a/b。",
+      "answer": "4",
+      "explanation": "距离等于坐标绝对值，即4。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "abs(-4)",
+        "expected": "4"
+      }
+    },
+    {
+      "id": "EX-R03-01",
+      "title": "R03原创练习1",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R03"
+      ],
+      "body": "计算−7+12。 只填写数值；分数可写成a/b。",
+      "answer": "5",
+      "explanation": "异号相加取较大绝对值的正号，12−7=5。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "-7+12",
+        "expected": "5"
+      }
+    },
+    {
+      "id": "EX-R03-02",
+      "title": "R03原创练习2",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R03"
+      ],
+      "body": "计算−6−(−10)。 只填写数值；分数可写成a/b。",
+      "answer": "4",
+      "explanation": "减负数改加相反数，−6+10=4。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "-6-(-10)",
+        "expected": "4"
+      }
+    },
+    {
+      "id": "EX-R03-03",
+      "title": "R03原创练习3",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R03"
+      ],
+      "body": "计算−3/4+1/2。 只填写数值；分数可写成a/b。",
+      "answer": "-1/4",
+      "explanation": "通分为−3/4+2/4=−1/4。",
+      "difficulty": 2,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "-3/4+1/2",
+        "expected": "-1/4"
+      }
+    },
+    {
+      "id": "EX-R04-01",
+      "title": "R04原创练习1",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R04"
+      ],
+      "body": "计算(−8)×(−3)。 只填写数值；分数可写成a/b。",
+      "answer": "24",
+      "explanation": "两负数相乘为正，8×3=24。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "(-8)*(-3)",
+        "expected": "24"
+      }
+    },
+    {
+      "id": "EX-R04-02",
+      "title": "R04原创练习2",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R04"
+      ],
+      "body": "计算18÷(−6)。 只填写数值；分数可写成a/b。",
+      "answer": "-3",
+      "explanation": "异号商为负，18÷6=3。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "18/(-6)",
+        "expected": "-3"
+      }
+    },
+    {
+      "id": "EX-R04-03",
+      "title": "R04原创练习3",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R04"
+      ],
+      "body": "计算(−2/3)÷(4/9)。 只填写数值；分数可写成a/b。",
+      "answer": "-3/2",
+      "explanation": "乘除数倒数，−2/3×9/4=−3/2。",
+      "difficulty": 2,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "(-2/3)/(4/9)",
+        "expected": "-3/2"
+      }
+    },
+    {
+      "id": "EX-R05-01",
+      "title": "R05原创练习1",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R05"
+      ],
+      "body": "计算(−4)^2。 只填写数值；分数可写成a/b。",
+      "answer": "16",
+      "explanation": "底数是−4，两个负因数之积为16。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "(-4)**2",
+        "expected": "16"
+      }
+    },
+    {
+      "id": "EX-R05-02",
+      "title": "R05原创练习2",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R05"
+      ],
+      "body": "计算−4^2（先乘方后取负）。 只填写数值；分数可写成a/b。",
+      "answer": "-16",
+      "explanation": "先算4的平方16，再取相反数。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "-(4**2)",
+        "expected": "-16"
+      }
+    },
+    {
+      "id": "EX-R05-03",
+      "title": "R05原创练习3",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R05"
+      ],
+      "body": "计算3−2×(−5)。 只填写数值；分数可写成a/b。",
+      "answer": "13",
+      "explanation": "先乘得−10，再算3−(−10)=13。",
+      "difficulty": 2,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "3-2*(-5)",
+        "expected": "13"
+      }
+    },
+    {
+      "id": "EX-R05-04",
+      "title": "R05原创练习4",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R05"
+      ],
+      "body": "计算(−2)^3+12÷(−3)。 只填写数值；分数可写成a/b。",
+      "answer": "-12",
+      "explanation": "乘方为−8，商为−4，相加得−12。",
+      "difficulty": 3,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "(-2)**3+12/(-3)",
+        "expected": "-12"
+      }
+    },
+    {
+      "id": "EX-R06-01",
+      "title": "R06原创练习1",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R06"
+      ],
+      "body": "气温原为−3摄氏度，又下降5摄氏度，现在温度是多少摄氏度？ 只填写数值；分数可写成a/b。",
+      "answer": "-8",
+      "explanation": "下降记减5，−3−5=−8。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "-3-5",
+        "expected": "-8"
+      }
+    },
+    {
+      "id": "EX-R06-02",
+      "title": "R06原创练习2",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R06"
+      ],
+      "body": "账户余额为8元，支付11元后余额可记为多少元（允许负余额）？ 只填写数值；分数可写成a/b。",
+      "answer": "-3",
+      "explanation": "余额等于8−11=−3，表示欠3元。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "8-11",
+        "expected": "-3"
+      }
+    },
+    {
+      "id": "EX-R06-03",
+      "title": "R06原创练习3",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "R06"
+      ],
+      "body": "机器人以起点为0、向北为正，先向北走7米再向南走10米，最终坐标是多少米？ 只填写数值；分数可写成a/b。",
+      "answer": "-3",
+      "explanation": "北向为正，南向为负，7+(−10)=−3。",
+      "difficulty": 2,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "arithmetic",
+        "expression": "7-10",
+        "expected": "-3"
+      }
+    },
+    {
+      "id": "EX-E01-01",
+      "title": "E01原创练习1",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E01"
+      ],
+      "body": "方程x+4=11的解是多少？ 只填写数值；分数可写成a/b。",
+      "answer": "7",
+      "explanation": "代入7后左边7+4=11，与右边一致。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "1",
+        "b": "4",
+        "c": "0",
+        "d": "11",
+        "solution": "7"
+      }
+    },
+    {
+      "id": "EX-E01-02",
+      "title": "E01原创练习2",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E01"
+      ],
+      "body": "方程2x+1=9的解是多少？ 只填写数值；分数可写成a/b。",
+      "answer": "4",
+      "explanation": "代入4后左边2×4+1=9。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "2",
+        "b": "1",
+        "c": "0",
+        "d": "9",
+        "solution": "4"
+      }
+    },
+    {
+      "id": "EX-E01-03",
+      "title": "E01原创练习3",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E01"
+      ],
+      "body": "方程−3x=12的解是多少？ 只填写数值；分数可写成a/b。",
+      "answer": "-4",
+      "explanation": "−3×(−4)=12，故−4满足原式。",
+      "difficulty": 2,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "-3",
+        "b": "0",
+        "c": "0",
+        "d": "12",
+        "solution": "-4"
+      }
+    },
+    {
+      "id": "EX-E02-01",
+      "title": "E02原创练习1",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E02"
+      ],
+      "body": "解方程x−8=−2。 只填写数值；分数可写成a/b。",
+      "answer": "6",
+      "explanation": "两边加8得x=6；6−8=−2。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "1",
+        "b": "-8",
+        "c": "0",
+        "d": "-2",
+        "solution": "6"
+      }
+    },
+    {
+      "id": "EX-E02-02",
+      "title": "E02原创练习2",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E02"
+      ],
+      "body": "解方程5x=−20。 只填写数值；分数可写成a/b。",
+      "answer": "-4",
+      "explanation": "两边同除以5得x=−4。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "5",
+        "b": "0",
+        "c": "0",
+        "d": "-20",
+        "solution": "-4"
+      }
+    },
+    {
+      "id": "EX-E02-03",
+      "title": "E02原创练习3",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E02"
+      ],
+      "body": "解方程x/3=5。 只填写数值；分数可写成a/b。",
+      "answer": "15",
+      "explanation": "两边乘3得x=15，15/3=5。",
+      "difficulty": 1,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "1/3",
+        "b": "0",
+        "c": "0",
+        "d": "5",
+        "solution": "15"
+      }
+    },
+    {
+      "id": "EX-E03-01",
+      "title": "E03原创练习1",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E03"
+      ],
+      "body": "解方程4x+3=x+12。 只填写数值；分数可写成a/b。",
+      "answer": "3",
+      "explanation": "两边减x再减3得3x=9，x=3。",
+      "difficulty": 2,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "4",
+        "b": "3",
+        "c": "1",
+        "d": "12",
+        "solution": "3"
+      }
+    },
+    {
+      "id": "EX-E03-02",
+      "title": "E03原创练习2",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E03"
+      ],
+      "body": "解方程7x−5=3x+11。 只填写数值；分数可写成a/b。",
+      "answer": "4",
+      "explanation": "移项得4x=16，故x=4。",
+      "difficulty": 2,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "7",
+        "b": "-5",
+        "c": "3",
+        "d": "11",
+        "solution": "4"
+      }
+    },
+    {
+      "id": "EX-E03-03",
+      "title": "E03原创练习3",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E03"
+      ],
+      "body": "解方程2x+8=5x−1。 只填写数值；分数可写成a/b。",
+      "answer": "3",
+      "explanation": "移项得9=3x，故x=3。",
+      "difficulty": 2,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "2",
+        "b": "8",
+        "c": "5",
+        "d": "-1",
+        "solution": "3"
+      }
+    },
+    {
+      "id": "EX-E03-04",
+      "title": "E03原创练习4",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E03"
+      ],
+      "body": "解方程3x−7=x−12。 只填写数值；分数可写成a/b。",
+      "answer": "-5/2",
+      "explanation": "移项得2x=−5，故x=−5/2。",
+      "difficulty": 3,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "3",
+        "b": "-7",
+        "c": "1",
+        "d": "-12",
+        "solution": "-5/2"
+      }
+    },
+    {
+      "id": "EX-E04-01",
+      "title": "E04原创练习1",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E04"
+      ],
+      "body": "解方程2(x+3)=18。 只填写数值；分数可写成a/b。",
+      "answer": "6",
+      "explanation": "去括号得2x+6=18，2x=12，x=6。",
+      "difficulty": 2,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "2",
+        "b": "6",
+        "c": "0",
+        "d": "18",
+        "solution": "6"
+      }
+    },
+    {
+      "id": "EX-E04-02",
+      "title": "E04原创练习2",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E04"
+      ],
+      "body": "解方程3(x−2)=x+8。 只填写数值；分数可写成a/b。",
+      "answer": "7",
+      "explanation": "去括号得3x−6=x+8，2x=14，x=7。",
+      "difficulty": 2,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "3",
+        "b": "-6",
+        "c": "1",
+        "d": "8",
+        "solution": "7"
+      }
+    },
+    {
+      "id": "EX-E04-03",
+      "title": "E04原创练习3",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E04"
+      ],
+      "body": "解方程5−(2x−3)=14。 只填写数值；分数可写成a/b。",
+      "answer": "-3",
+      "explanation": "去括号得8−2x=14，−2x=6，x=−3。",
+      "difficulty": 3,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "-2",
+        "b": "8",
+        "c": "0",
+        "d": "14",
+        "solution": "-3"
+      }
+    },
+    {
+      "id": "EX-E05-01",
+      "title": "E05原创练习1",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E05"
+      ],
+      "body": "解方程x/2+1=6。 只填写数值；分数可写成a/b。",
+      "answer": "10",
+      "explanation": "两边乘2得x+2=12，x=10。",
+      "difficulty": 2,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "1/2",
+        "b": "1",
+        "c": "0",
+        "d": "6",
+        "solution": "10"
+      }
+    },
+    {
+      "id": "EX-E05-02",
+      "title": "E05原创练习2",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E05"
+      ],
+      "body": "解方程(x−1)/3=4。 只填写数值；分数可写成a/b。",
+      "answer": "13",
+      "explanation": "两边乘3得x−1=12，x=13。",
+      "difficulty": 2,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "1/3",
+        "b": "-1/3",
+        "c": "0",
+        "d": "4",
+        "solution": "13"
+      }
+    },
+    {
+      "id": "EX-E05-03",
+      "title": "E05原创练习3",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E05"
+      ],
+      "body": "解方程(x+2)/4=x/2−1。 只填写数值；分数可写成a/b。",
+      "answer": "6",
+      "explanation": "两边乘4得x+2=2x−4，故x=6。",
+      "difficulty": 3,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "1/4",
+        "b": "1/2",
+        "c": "1/2",
+        "d": "-1",
+        "solution": "6"
+      }
+    },
+    {
+      "id": "EX-E06-01",
+      "title": "E06原创练习1",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E06"
+      ],
+      "body": "每支笔4元，另付包装费2元，共花26元。买了多少支笔？ 只填写数值；分数可写成a/b。",
+      "answer": "6",
+      "explanation": "设买x支，4x+2=26，得x=6；6为正整数且4×6+2=26。",
+      "difficulty": 2,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "4",
+        "b": "2",
+        "c": "0",
+        "d": "26",
+        "solution": "6"
+      }
+    },
+    {
+      "id": "EX-E06-02",
+      "title": "E06原创练习2",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E06"
+      ],
+      "body": "长方形宽为x厘米，长比宽多3厘米，周长26厘米。宽是多少厘米？ 只填写数值；分数可写成a/b。",
+      "answer": "5",
+      "explanation": "周长2[x+(x+3)]=26，化为4x+6=26，x=5；长8、宽5符合条件。",
+      "difficulty": 2,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "4",
+        "b": "6",
+        "c": "0",
+        "d": "26",
+        "solution": "5"
+      }
+    },
+    {
+      "id": "EX-E06-03",
+      "title": "E06原创练习3",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E06"
+      ],
+      "body": "小车匀速每小时行驶12千米，出发时距起点已有5千米，沿同方向到达距起点41千米处，用了多少小时？ 只填写数值；分数可写成a/b。",
+      "answer": "3",
+      "explanation": "设时间x小时，12x+5=41，x=3；时间为正且距离核对为41。",
+      "difficulty": 2,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "12",
+        "b": "5",
+        "c": "0",
+        "d": "41",
+        "solution": "3"
+      }
+    },
+    {
+      "id": "EX-E06-04",
+      "title": "E06原创练习4",
+      "type": "EXERCISE",
+      "knowledge_point_ids": [
+        "E06"
+      ],
+      "body": "甲有若干张卡片，乙比甲多8张，两人共34张。甲有多少张？ 只填写数值；分数可写成a/b。",
+      "answer": "13",
+      "explanation": "设甲有x张，x+(x+8)=34，x=13；乙21张，共34张。",
+      "difficulty": 2,
+      "source_id": "SRC-TEAM-01",
+      "review_status": "DRAFT",
+      "review_note": "原创草稿；独立算术/线性方程复算通过仍不代表教师审核。",
+      "check": {
+        "kind": "linear",
+        "a": "2",
+        "b": "8",
+        "c": "0",
+        "d": "34",
+        "solution": "13"
+      }
+    }
+  ]
+}

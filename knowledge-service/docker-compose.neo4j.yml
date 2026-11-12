@@ -1,0 +1,20 @@
+services:
+  neo4j:
+    image: neo4j:5-community
+    container_name: education-neo4j
+    ports:
+      - "127.0.0.1:17474:7474"
+      - "127.0.0.1:17687:7687"
+    environment:
+      NEO4J_AUTH: neo4j/change-me-now
+      NEO4J_server_bolt_advertised__address: localhost:17687
+      NEO4J_server_http_advertised__address: localhost:17474
+      NEO4J_server_bolt_thread__pool__max__size: 20
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+      - ${GRAPH_BACKUP_ROOT:-D:/CodexEnvs/EducationAgent/backups/graph}:/backups
+
+volumes:
+  neo4j_data:
+  neo4j_logs:

@@ -1,0 +1,22 @@
+{
+  "schema_version": "graph-release-index-v1",
+  "immutable": true,
+  "graph_version": "2.4.0-c5-gc.1",
+  "published_at": "2026-08-20T00:00:00Z",
+  "graph_file": "knowledge_graph_v2.json",
+  "graph_sha256": "408d53e55a25d4dd9d7f5600358917af83a198ef2c8687b5e23a365a1f6f0ecf",
+  "graph_size": 300373,
+  "counts": {
+    "nodes": 150,
+    "edges": 119,
+    "sources": 147,
+    "approved_nodes": 147,
+    "pending_nodes": 3,
+    "approved_edges": 106,
+    "pending_edges": 3,
+    "rejected_edges": 10,
+    "approved_sources": 147
+  },
+  "quality_decision": "PUBLISH",
+  "snapshot_location": "D:\\CodexEnvs\\EducationAgent\\backups\\graph\\2.4.0-c5-gc.1"
+}

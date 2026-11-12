@@ -1,0 +1,8 @@
+{
+  "cases": [
+    {"case_id":"assessment-basic-v1","capability":"ASSESSMENT_PARSE","structure_ok":true,"source_compliant":true,"quality_score":0.92,"latency_ms":620,"input_units":820,"output_units":340,"estimated_cost_microunits":12},
+    {"case_id":"grading-rubric-v1","capability":"SUBJECTIVE_GRADE","structure_ok":true,"source_compliant":true,"quality_score":0.90,"latency_ms":510,"input_units":640,"output_units":280,"estimated_cost_microunits":10},
+    {"case_id":"tutor-grounded-v1","capability":"TUTOR_CHAT","structure_ok":true,"source_compliant":true,"quality_score":0.94,"latency_ms":720,"input_units":970,"output_units":410,"estimated_cost_microunits":15},
+    {"case_id":"profile-summary-v1","capability":"PROFILE_SUMMARIZE","structure_ok":true,"source_compliant":true,"quality_score":0.88,"latency_ms":460,"input_units":560,"output_units":250,"estimated_cost_microunits":9}
+  ]
+}

@@ -1,0 +1,18 @@
+﻿book_id,book_name,publisher,author,publish_year,catalog_status,rights_status
+1,Python程序设计 (陈春晖，翁恺，季江民编著),浙江大学出版社,陈春晖，翁恺，季江民,2019,完整,RESTRICTED
+2,Python程序设计 (赵莉，唐小平，彭庆喜主编),北京理工大学出版社,赵莉，唐小平，彭庆喜,未知,完整,RESTRICTED
+3,Python程序设计（原书第2版） (凯·霍斯特曼（Cay Horstmann） 兰斯·尼塞斯（Rance Necaise）),机械工业出版社,凯·霍斯特曼（Cay Horstmann)，兰斯·尼塞斯（Rance Necaise）,未知,完整,PENDING
+4,Python程序设计——从基础开发到数据分析（微课版） (夏敏捷),清华大学出版社,夏敏捷,2019,完整,PENDING
+5,Python程序设计基础 (顾鸿虹，于静主编),北京邮电大学出版社,顾鸿虹，于静,未知,完整,PENDING
+6,Python程序设计基础与应用 (董付国),机械工业出版社,董付国,2018,完整,PENDING
+7,"Python程序设计教程（第2版） (样年华,柳青,郑戟明)",清华大学出版社,"样年华,柳青,郑戟明",2017,完整,PENDING
+8,Python程序设计与科学计算 (尹永学),人民邮电出版社,尹永学，黄海涛,2019,完整,RESTRICTED
+9,Python语言程序设计基础（第2版） (嵩天，礼欣，黄天羽著),高等教育出版社,嵩天，礼欣，黄天羽,2017,完整,PENDING
+10,python语言程序设计基础（微课版） (杨旭，张学义，单家凌 主编),电子科技大学出版社,杨旭，张学义，单家凌,2019,缺失,PENDING
+11,Python程序设计 (John Zelle),人民邮电出版社,John Zelle,2017,完整,RESTRICTED
+12,Python程序设计 第2版 (董付国),清华大学出版社,董付国,2015,完整,RESTRICTED
+13,Python程序设计基础 (周元哲),清华大学出版社,周元哲,2015,完整,PENDING
+14,Python程序设计习题解析 (周元哲),清华大学出版社,周元哲,2017,完整,RESTRICTED
+15,"Python语言程序设计 (袁方, 肖胜刚, 齐鸿志)",清华大学出版社,"袁方, 肖胜刚, 齐鸿志",2019,缺失,PENDING
+16,Python语言程序设计（微课版） (曹洁 张志锋 孙玉胜 崔霄),清华大学出版社,曹洁，张志锋，孙玉胜，崔霄,2019,缺失,PENDING
+17,"Python语言程序设计基础教程 (傅清平, 李雪斌, 徐文胜)",清华大学出版社,"傅清平, 李雪斌, 徐文胜",2022,完整,RESTRICTED
