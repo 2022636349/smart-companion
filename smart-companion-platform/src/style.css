@@ -395,3 +395,64 @@ input[type=checkbox]{appearance:none;display:inline-grid;place-content:center;po
 .assistant-action { margin-top:22px; display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
 .assistant-action p { margin:0; }
 @media(max-width:600px){.assistant-card .flow-filters{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}.assistant-action{align-items:stretch;flex-direction:column}.assistant-action button{width:100%}}
+
+/* Refine the existing dark-blue identity with tighter content rhythm and clearer surfaces. */
+:root {
+  --canvas: #081321;
+  --surface: #101e30;
+  --raised: #182a40;
+  --line: #2d415b;
+  --shadow: 0 14px 34px #0000001c;
+}
+body {
+  background:
+    radial-gradient(ellipse at 85% 0%, color-mix(in srgb, var(--blue) 6%, transparent), transparent 36rem),
+    var(--canvas);
+}
+.card {
+  border-radius: 14px;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--surface) 96%, white), var(--surface) 62%);
+  box-shadow: var(--shadow);
+}
+.login-page {
+  max-width: 1360px;
+  grid-template-columns: minmax(0, 1.12fr) minmax(380px, .88fr);
+  gap: clamp(40px, 7vw, 104px);
+  padding-inline: clamp(28px, 5vw, 72px);
+}
+.login-intro { max-width: 650px; }
+.login-intro .brand { margin-bottom: clamp(38px, 5vw, 62px); }
+.login-intro h1 { max-width: 570px; }
+.login-features { gap: 9px; }
+.login-features span { border-radius: 999px; padding: 8px 13px; }
+.login-card { padding: clamp(26px, 3vw, 38px); }
+.role-entry {
+  gap: 9px;
+  padding: 19px 20px;
+  border-radius: 11px;
+  background: color-mix(in srgb, var(--raised) 82%, var(--surface));
+}
+.role-entry strong { font-size: 19px; }
+.flow-main .workspace { padding: 28px clamp(22px, 3vw, 44px); gap: 18px; }
+.flow-metrics { gap: 12px; }
+.flow-metrics > .card { padding: 16px 19px; border-top: 2px solid color-mix(in srgb, var(--blue) 65%, var(--line)); }
+.dashboard-chart-grid { gap: 16px; }
+.dashboard-chart { padding: 20px; }
+.empty-state { min-height: 0; padding: 14px 0; }
+.empty-upload { min-height: 300px; }
+@media(max-width:870px) {
+  .login-page { grid-template-columns: minmax(0, 1fr) minmax(0, .92fr); gap: 28px; padding-inline: 24px; }
+}
+@media(max-width:800px) {
+  .login-page { grid-template-columns: 1fr; gap: 24px; padding: 32px 22px; }
+  .login-intro { max-width: none; padding: 0; }
+  .login-intro .brand { margin-bottom: 24px; }
+  .flow-main .workspace { padding: 22px; gap: 16px; }
+  .flow-metrics { gap: 10px; }
+}
+@media(max-width:480px) {
+  .login-page { padding: 26px 16px; }
+  .login-card { padding: 22px 18px; }
+  .flow-main .workspace { padding: 16px; }
+  .dashboard-chart { padding: 17px; }
+}
